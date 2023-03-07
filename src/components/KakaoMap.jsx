@@ -41,7 +41,7 @@ export default function KakaoMap() {
 
   return (
     <div
-      style={{ margin: "auto", width: "90%" }}
+      style={{ margin: "auto", width: "80%" }}
       id="contact"
       className="pt-20"
     >
@@ -75,7 +75,7 @@ export default function KakaoMap() {
             onMouseLeave={() => {
               setMouseOver((mouseOver) => !mouseOver);
             }}
-            style={{ width: "420px" }}
+            style={{ width: "360px" }}
           >
             <div className="grid items-center justify-center lign-middle">
               <div className="flex justify-center mb-2">
@@ -120,7 +120,7 @@ export default function KakaoMap() {
             onMouseLeave={() => {
               setMouseOverTwo((mouseOverTwo) => !mouseOverTwo);
             }}
-            style={{ width: "420px" }}
+            style={{ width: "360px" }}
           >
             <div className="grid items-center justify-center lign-middle">
               <div className="flex justify-center mb-2">
@@ -165,7 +165,7 @@ export default function KakaoMap() {
             onMouseLeave={() => {
               setMouseOverThree((mouseOverThree) => !mouseOverThree);
             }}
-            style={{ width: "420px" }}
+            style={{ width: "360px" }}
           >
             <div className="grid items-center justify-center lign-middle">
               <div className="flex justify-center mb-2">

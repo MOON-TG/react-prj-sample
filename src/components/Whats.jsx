@@ -13,7 +13,7 @@ export default function Whats() {
 
   return (
     <div id="about" className="pt-20">
-      <div style={{ margin: "auto", width: "90%" }}>
+      <div style={{ margin: "auto", width: "80%" }}>
         <Fade bottom>
           <p className="text-3xl font-bold ">(로봇이름)은?</p>
         </Fade>
@@ -23,8 +23,8 @@ export default function Whats() {
               id="omo-card"
               className={
                 mouseOver
-                  ? "text-center rounded-lg shadow-lg bg-red-500 w-72 h-72 duration-300"
-                  : "text-center rounded-lg shadow-lg w-72 h-72 duration-300"
+                  ? "text-center rounded-lg shadow-lg bg-red-500 w-64 h-72 duration-300"
+                  : "text-center rounded-lg shadow-lg w-64 h-72 duration-300"
               }
               onMouseOver={() => {
                 setMouseOver((mouseOver) => !mouseOver);
@@ -67,8 +67,8 @@ export default function Whats() {
               id="omo-card"
               className={
                 mouseOverTwo
-                  ? "text-center rounded-lg shadow-lg bg-red-500 w-72 h-72 duration-300"
-                  : "text-center rounded-lg shadow-lg w-72 h-72 duration-300"
+                  ? "text-center rounded-lg shadow-lg bg-red-500 w-64 h-72 duration-300"
+                  : "text-center rounded-lg shadow-lg w-64 h-72 duration-300"
               }
               onMouseOver={() => {
                 setMouseOverTwo((mouseOverTwo) => !mouseOverTwo);
@@ -109,8 +109,8 @@ export default function Whats() {
               id="omo-card"
               className={
                 mouseOverThree
-                  ? "text-center rounded-lg shadow-lg bg-red-500 w-72 h-72 duration-300"
-                  : "text-center rounded-lg shadow-lg w-72 h-72 duration-300"
+                  ? "text-center rounded-lg shadow-lg bg-red-500 w-64 h-72 duration-300"
+                  : "text-center rounded-lg shadow-lg w-64 h-72 duration-300"
               }
               onMouseOver={() => {
                 setMouseOverThree((mouseOverThree) => !mouseOverThree);
@@ -151,8 +151,8 @@ export default function Whats() {
               id="omo-card"
               className={
                 mouseOverFour
-                  ? "text-center rounded-lg shadow-lg bg-red-500 w-72 h-72 duration-300"
-                  : "text-center rounded-lg shadow-lg w-72 h-72 duration-300"
+                  ? "text-center rounded-lg shadow-lg bg-red-500 w-64 h-72 duration-300"
+                  : "text-center rounded-lg shadow-lg w-64 h-72 duration-300"
               }
               onMouseOver={() => {
                 setMouseOverFour((mouseOverFour) => !mouseOverFour);

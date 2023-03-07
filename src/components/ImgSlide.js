@@ -19,7 +19,7 @@ export default class SimpleSlider extends Component {
     return (
       <Fade right>
         <div
-          style={{ margin: "auto", width: "90%" }}
+          style={{ margin: "auto", width: "80%" }}
           id="gallery"
           className="pt-20"
         >

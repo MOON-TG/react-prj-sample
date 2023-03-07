@@ -16,7 +16,7 @@ export default function Omocard() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [robotNum, setRobotNum] = useState("");
   return (
-    <div style={{ margin: "auto", width: "90%" }} id="robot" className="pt-20 ">
+    <div style={{ margin: "auto", width: "80%" }} id="robot" className="pt-20 ">
       {/* , overflowX: "hidden"  */}
       <Fade bottom>
         <p className="text-3xl font-bold">Robot</p>
