@@ -41,12 +41,12 @@ export default function KakaoMap() {
 
   return (
     <div
-      style={{ margin: "auto", width: "80%" }}
+      style={{ margin: "auto", width: "60%" }}
       id="contact"
       className="pt-20"
     >
       <Fade bottom>
-        <p className="text-3xl font-bold">Contact Us</p>
+        <p className="text-2xl font-bold">Contact Us</p>
       </Fade>
       <Fade bottom>
         <div
@@ -60,7 +60,102 @@ export default function KakaoMap() {
           ></div>
         </div>
       </Fade>
-      <Fade bottom>
+      <div className="flex mt-16 mb-16">
+        <div>
+          <div className="flex">
+            <div className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full">
+              <TbMap2 className="text-3xl text-white" />
+            </div>
+            <div className="grid ml-3">
+              <div>
+                <p className="text-sm font-bold">주소</p>
+              </div>
+              <div>
+                <p className="text-sm">
+                  대전 서구 계룡로491번길 86 미래융합교육원
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex mt-5">
+            <div className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full">
+              <AiOutlineMail className="text-3xl text-white" />
+            </div>
+            <div className="grid ml-3">
+              <div>
+                <p className="text-sm font-bold">메일</p>
+              </div>
+              <div>
+                <p className="text-sm">omorobot123@sample.com</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex mt-5">
+            <div className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full">
+              <AiOutlinePhone className="text-3xl text-white" />
+            </div>
+            <div className="grid ml-3">
+              <div>
+                <p className="text-sm font-bold">연락처</p>
+              </div>
+              <div>
+                <p className="text-sm">042-333-0000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ flexGrow: 2 }} className="ml-32 bg-white ">
+          <div className="flex justify-between">
+            <div style={{ width: "40%" }}>
+              <input
+                type="text"
+                className="p-1 mr-3 text-sm bg-white border-2 border-gray-300 placeholder:text-gray-400"
+                style={{ width: "100%" }}
+                placeholder="이름"
+              />
+            </div>
+
+            <div style={{ width: "60%" }} className="ml-3">
+              <input
+                type="text"
+                className="p-1 text-sm bg-white border-2 border-gray-300 placeholder:text-gray-400 "
+                style={{ width: "100%" }}
+                placeholder="이메일"
+              />
+            </div>
+          </div>
+          <div>
+            <div>
+              <input
+                type="text"
+                className="p-1 mt-3 text-sm bg-white border-2 border-gray-300 placeholder:text-gray-400"
+                style={{ width: "100%" }}
+                placeholder="제목"
+              />
+            </div>
+            <div>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                required
+                className="h-40 p-1 mt-3 text-sm bg-white border-2 border-gray-300 resize-none placeholder:text-gray-400"
+                style={{ width: "100%" }}
+                placeholder="내용"
+              ></textarea>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <button className="w-32 h-10 mt-3 text-sm font-bold text-white bg-red-500 rounded-3xl hover:bg-red-600">
+              보내기
+            </button>
+          </div>
+        </div>
+      </div>
+      å
+      {/* <Fade bottom>
         <div className="flex justify-between">
           <div
             id="map-card"
@@ -198,7 +293,7 @@ export default function KakaoMap() {
             </div>
           </div>
         </div>
-      </Fade>
+      </Fade> */}
     </div>
   );
 }
