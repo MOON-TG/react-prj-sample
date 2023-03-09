@@ -83,9 +83,9 @@ const Navbar = () => {
             </LinkScroll>
           </li>
           <li className="nav-item">
-            <a href="http://localhost:3000/#gallery" onClick={closeMenu}>
+            <Link to="/" onClick={closeMenu}>
               Team
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <a href="/board" onClick={closeMenu}>

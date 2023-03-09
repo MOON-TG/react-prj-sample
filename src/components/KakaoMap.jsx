@@ -154,7 +154,6 @@ export default function KakaoMap() {
           </div>
         </div>
       </div>
-      å
       {/* <Fade bottom>
         <div className="flex justify-between">
           <div
