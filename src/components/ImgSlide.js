@@ -19,14 +19,15 @@ export default class SimpleSlider extends Component {
     return (
       <Fade right>
         <div
-          style={{ margin: "auto", width: "60%" }}
+          style={{ margin: "auto", width: "870px" }}
           id="gallery"
           className="pt-20"
         >
-          <div>
+          <div id="imgSlideDiv">
             <Slider {...settings}>
               <div>
                 <img
+                  id="imgSlideBox"
                   src="./img/slide01.png"
                   style={{ height: "400px", width: "100vw" }}
                   alt=""
@@ -34,6 +35,7 @@ export default class SimpleSlider extends Component {
               </div>
               <div>
                 <img
+                  id="imgSlideBox"
                   src="./img/slide02.png"
                   style={{ height: "400px", width: "100vw" }}
                   alt=""
@@ -41,6 +43,7 @@ export default class SimpleSlider extends Component {
               </div>
               <div>
                 <img
+                  id="imgSlideBox"
                   src="./img/slide03.png"
                   style={{ height: "400px", width: "100vw" }}
                   alt=""
@@ -48,6 +51,7 @@ export default class SimpleSlider extends Component {
               </div>
               <div>
                 <img
+                  id="imgSlideBox"
                   src="./img/slide04.png"
                   style={{ height: "400px", width: "100vw" }}
                   alt=""

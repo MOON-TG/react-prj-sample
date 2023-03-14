@@ -16,10 +16,16 @@ export default function Omocard() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [robotNum, setRobotNum] = useState("");
   return (
-    <div style={{ margin: "auto", width: "60%" }} id="robot" className="pt-20 ">
+    <div
+      style={{ margin: "auto", width: "870px" }}
+      id="robot"
+      className="pt-20 "
+    >
       {/* , overflowX: "hidden"  */}
       <Fade bottom>
-        <p className="text-2xl font-bold">Robot</p>
+        <p id="sectionP" className="text-2xl font-bold">
+          Robot
+        </p>
       </Fade>
       <Fade bottom>
         <div
@@ -29,19 +35,21 @@ export default function Omocard() {
               ? " duration-500 mt-4 mb-4 flex  bg-white rounded-lg shadow-lg pt-4 pb-4"
               : " duration-500 mt-4 mb-4 flex  bg-white rounded-lg shadow-lg pt-4 pb-4"
           }
+          id="omocardDiv"
         >
-          <div>
+          <div id="mapDiv">
             <img
               src={mapimg}
               className={
                 menuOpen
                   ? " rounded-xl scale-0 -ml-16 -mr-40 mt-24 duration-500 opacity-0"
-                  : " rounded-xl scale-75 mt-6 duration-500"
+                  : " rounded-xl scale-75 mt-6 duration-500 ml-10"
               }
             />
           </div>
 
           <div
+            id="omoButton"
             className={
               menuOpen
                 ? " grid content-center gap-4 -ml-32  duration-500 z-10"
@@ -98,6 +106,7 @@ export default function Omocard() {
             </div>
           </div>
           <div
+            id="omoState"
             className={
               menuOpen
                 ? "  rounded-lg w-80  z-0 ml-10 duration-500 shadow-lg"
@@ -107,7 +116,7 @@ export default function Omocard() {
             <div className="font-bold bg-indigo-700 rounded-t-lg ">
               <p className="text-center text-white">{robotNum}</p>
             </div>
-            <div className="flex justify-center mt-7">
+            <div className="flex justify-center mt-7" id="batteryInfo">
               <div className="flex mt-4 col-10 h-13">
                 <BsBatteryFull className="text-2xl text-blue-500" />
                 <p className="mt-1 ml-3 text-sm font-bold ">배터리</p>
@@ -141,13 +150,16 @@ export default function Omocard() {
         </div>
       </Fade>
       <Fade bottom>
-        <div className="flex justify-between mt-5 bg-white rounded-lg shadow-lg">
+        <div
+          className="flex justify-between mt-5 bg-white rounded-lg shadow-lg"
+          id="omoInfo"
+        >
           <div>
-            <p className="p-4 text-lg font-bold ">
+            <p className="p-4 text-lg font-bold " id="omoP">
               오모로봇의 다양한 정보를 확인해보세요.
             </p>
           </div>
-          <div className="flex items-center ">
+          <div className="flex items-center " id="infoIcons">
             <div className="flex items-center justify-center w-12 h-12 mr-4 bg-gray-100 rounded-full cursor-pointer hover:text-red-500">
               <AiFillYoutube className="text-3xl" />
             </div>
@@ -158,7 +170,10 @@ export default function Omocard() {
               {" "}
               <AiFillInstagram className="text-3xl" />
             </div>
-            <div className="flex items-center justify-center w-12 h-12 mr-4 bg-gray-100 rounded-full cursor-pointer hover:text-blue-500">
+            <div
+              id="twitterIcon"
+              className="flex items-center justify-center w-12 h-12 mr-4 bg-gray-100 rounded-full cursor-pointer hover:text-blue-500"
+            >
               {" "}
               <AiOutlineTwitter className="text-3xl" />
             </div>

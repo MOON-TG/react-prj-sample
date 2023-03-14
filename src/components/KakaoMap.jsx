@@ -41,15 +41,18 @@ export default function KakaoMap() {
 
   return (
     <div
-      style={{ margin: "auto", width: "60%" }}
+      style={{ margin: "auto", width: "870px" }}
       id="contact"
       className="pt-20"
     >
       <Fade bottom>
-        <p className="text-2xl font-bold">Contact Us</p>
+        <p id="kakaoMapP" className="text-2xl font-bold">
+          Contact Us
+        </p>
       </Fade>
       <Fade bottom>
         <div
+          id="kakaoMapDiv"
           className="mt-4 mb-3 bg-white rounded-lg shadow-md"
           style={{ height: "300px" }}
         >
@@ -60,8 +63,8 @@ export default function KakaoMap() {
           ></div>
         </div>
       </Fade>
-      <div className="flex mt-16 mb-16">
-        <div>
+      <div className="flex mt-16 mb-16" id="mailDiv">
+        <div id="companyInfo">
           <div className="flex">
             <div className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full">
               <TbMap2 className="text-3xl text-white" />
@@ -77,7 +80,7 @@ export default function KakaoMap() {
               </div>
             </div>
           </div>
-          <div className="flex mt-5">
+          <div className="flex mt-5" id="mailInfo">
             <div className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full">
               <AiOutlineMail className="text-3xl text-white" />
             </div>
@@ -90,7 +93,7 @@ export default function KakaoMap() {
               </div>
             </div>
           </div>
-          <div className="flex mt-5">
+          <div className="flex mt-5" id="telInfo">
             <div className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full">
               <AiOutlinePhone className="text-3xl text-white" />
             </div>
@@ -105,7 +108,7 @@ export default function KakaoMap() {
           </div>
         </div>
 
-        <div style={{ flexGrow: 2 }} className="ml-32 bg-white ">
+        <div id="sendMail" style={{ flexGrow: 2 }} className="ml-32 bg-white ">
           <div className="flex justify-between">
             <div style={{ width: "40%" }}>
               <input

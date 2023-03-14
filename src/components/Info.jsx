@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 
 export default function Info() {
   return (
-    <div style={{ margin: "auto", width: "60%" }}>
+    <div style={{ margin: "auto", width: "870px" }}>
       <Fade bottom>
         <div className="flex justify-between mt-5 bg-white rounded-lg shadow-lg">
           <div>
