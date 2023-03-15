@@ -13,6 +13,7 @@ import NewNav from "./components/NewNav";
 import BoardDetail from "./pages/Board/BoardDetail";
 import BoardMy from "./pages/Board/BoardMy";
 import ChangeInfoPage from "./pages/ChangeInfoPage";
+import NoMatch from "./routes/NoMatch";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/board/detail" element={<BoardDetail />} />
           <Route path="/board/my" element={<BoardMy />} />
           <Route path="/changeinfo" element={<ChangeInfoPage />} />
+          <Route path="*" element={<NoMatch />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>

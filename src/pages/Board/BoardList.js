@@ -5,7 +5,11 @@ export default function BoardList() {
   return (
     <div>
       <NewNavBoard />
-      <div style={{ margin: "auto", width: "60%" }} className="h-screen">
+      <div
+        style={{ margin: "auto", width: "60%" }}
+        className="h-screen"
+        id="boardListDiv"
+      >
         <div>.</div>
         <p className="mt-20 text-2xl font-bold">게시판</p>
         <table class="board-table mt-5 ">

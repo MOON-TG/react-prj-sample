@@ -1,14 +1,15 @@
 import NewNavBoard from "../../components/NewNavBoard";
 import { Link } from "react-router-dom";
+import { AiOutlineDelete } from "react-icons/ai";
 
 export default function BoardDetail() {
   return (
-    <div>
+    <div
+      style={{ margin: "auto", width: "60%", height: "100%" }}
+      id="boardDetailDiv"
+    >
       <NewNavBoard />
-      <div
-        style={{ margin: "auto", width: "60%", height: "100%" }}
-        className=""
-      >
+      <div className="">
         <div>.</div>
         <div className="mt-20">
           <div>
@@ -50,23 +51,21 @@ export default function BoardDetail() {
             <p className="text-sm col-8">
               고도가 높을수록 해가 가까이 있기 때문에 덥다.
             </p>
-            <div className="flex items-center ml-10 col-2">
-              <p className="text-sm">2022.01.01</p>
-              <button className="flex items-center justify-center w-4 h-5 ml-3 text-white bg-gray-300">
-                X
-              </button>
-            </div>
+
+            <p className="text-sm col-1">2022.01.01</p>
+            <button className="col-1">
+              <AiOutlineDelete className="" />
+            </button>
           </div>
 
           <div className="flex mt-3">
             <p className="text-sm col-2">이름이길어도</p>
             <p className="text-sm col-8">col을 이용하면 비율이 동일할까요</p>
-            <div className="flex items-center ml-10 col-2">
-              <p className="text-sm">2022.01.01</p>
-              <button className="flex items-center justify-center w-4 h-5 ml-3 text-white bg-gray-300">
-                X
-              </button>
-            </div>
+
+            <p className="text-sm col-1">2022.01.01</p>
+            <button className="flex items-center justify-center w-4 h-5 text-white bg-gray-300 col-1">
+              <AiOutlineDelete />
+            </button>
           </div>
         </div>
         <div className="pb-20 mt-4">

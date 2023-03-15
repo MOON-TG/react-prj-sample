@@ -5,7 +5,7 @@ export default function BoardCreate() {
   return (
     <div>
       <NewNavBoard />
-      <div style={{ margin: "auto", width: "60%" }} className="h-screen">
+      <div style={{ margin: "auto", width: "60%" }} className="h-screen" id="boardCreateDiv">
         <div>.</div>
         <p className="mt-20 text-2xl font-bold">글쓰기</p>
         <div className="mt-5">
