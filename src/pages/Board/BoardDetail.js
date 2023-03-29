@@ -1,6 +1,6 @@
 import NewNavBoard from "../../components/NewNavBoard";
 import { Link } from "react-router-dom";
-import { AiOutlineDelete } from "react-icons/ai";
+import { FiDelete } from "react-icons/fi";
 
 export default function BoardDetail() {
   return (
@@ -53,8 +53,8 @@ export default function BoardDetail() {
             </p>
 
             <p className="text-sm col-1">2022.01.01</p>
-            <button className="col-1">
-              <AiOutlineDelete className="" />
+            <button className="col-1 ml-7">
+              <FiDelete className="" />
             </button>
           </div>
 
@@ -63,8 +63,8 @@ export default function BoardDetail() {
             <p className="text-sm col-8">col을 이용하면 비율이 동일할까요</p>
 
             <p className="text-sm col-1">2022.01.01</p>
-            <button className="flex items-center justify-center w-4 h-5 text-white bg-gray-300 col-1">
-              <AiOutlineDelete />
+            <button className="col-1 ml-7">
+              <FiDelete />
             </button>
           </div>
         </div>

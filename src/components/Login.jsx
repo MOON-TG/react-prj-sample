@@ -22,16 +22,28 @@ export default function Login() {
             placeholder="Password"
           />
 
-          <button type="submit" className="w-full font-bold btn btn-primary">
-            로그인
+          <button
+            type="submit"
+            className="w-full font-bold bg-blue-500 border-none btn btn-primary"
+          >
+            로그인
           </button>
           <button
             type="submit"
-            className="w-full mt-3 font-bold text-black bg-yellow-300 btn btn-warning"
+            className="w-full mt-3 font-bold text-black bg-yellow-300 border-none btn btn-warning"
           >
             <RiKakaoTalkFill className="mr-2 text-2xl" />
             카카오로 로그인
           </button>
+          <div className="flex justify-end mt-3">
+            <Link to="/findid">
+              <p className="text-xs">아이디 찾기</p>
+            </Link>
+            <p className="ml-1 mr-1 text-xs text-gray-300">|</p>
+            <Link to="/findpw">
+              <p className="text-xs">비밀번호 찾기</p>
+            </Link>
+          </div>
         </div>
 
         <div className="flex mt-6 text-grey-dark">

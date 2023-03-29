@@ -4,11 +4,8 @@
 @import url("https://fonts.google.com/icon?family=Material+Icons");
 
 @font-face {
-  font-family: "LINESeedKR-Bd";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
-    format("woff2");
-  font-weight: 700;
-  font-style: normal;
+  font-family: "gothicA";
+  src: url(/src/assets/fonts/Noto_Sans_KR/NotoSansKR-Regular.otf);
 }
 
 @media screen and (max-width: 900px) {
@@ -213,6 +210,12 @@
   #telInfo {
     margin-top: 20px !important;
   }
+  #boardListDiv {
+    width: 95% !important;
+  }
+  #boardDetailDiv {
+    width: 95% !important;
+  }
 }
 
 :root {
@@ -221,6 +224,10 @@
   --secondary-color: #ffea00;
   --secondary-dark: #e3d002;
   --overlay: rgba(0, 0, 0, 0.7);
+}
+.nav-menu {
+  margin-top: -20px;
+  overflow: auto;
 }
 
 * {
@@ -239,11 +246,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "gothicA";
 }
 
 code {
